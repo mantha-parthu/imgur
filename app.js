@@ -1,9 +1,21 @@
+await import("dotenv").then((dotenv) => dotenv.config());
+import { join, resolve } from "path";
 import { default as express } from "express";
+const { HOST, PORT } = process.env;
 const app = express();
-const PORT = process.env.PORT || 3000;
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+app.set("views", join(resolve(), "/public"));
 app.get("/", (req, res) => {
-  res.send("hey it is working");
+  res.render("index");
 });
-app.listen(PORT, () => {
-  console.log("server started at", process.env.PORT)
+app.post("/new", (req, res) => {
+  res.render("profile", {
+    name: "amalu",
+  });
+});
+// server
+app.listen(PORT, HOST, () => {
+  console.log("server started at", process.env.PORT);
+  console.log(resolve());
 });
