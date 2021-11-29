@@ -1,28 +1,33 @@
 {
-  "name": "imgur",
+  "name": "imgur_backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "type": "module",
+  "description": "At the end of this milestone you will learn",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amalu-sajeev-me/imgur.git"
+    "url": "git+https://github.com/exponentsoftware/MS_Imgur---backend_Lupus_Tep_Online_Full-time_2021_1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amalu-sajeev-me/imgur/issues"
+    "url": "https://github.com/exponentsoftware/MS_Imgur---backend_Lupus_Tep_Online_Full-time_2021_1/issues"
   },
-  "homepage": "https://github.com/amalu-sajeev-me/imgur#readme",
+  "homepage": "https://github.com/exponentsoftware/MS_Imgur---backend_Lupus_Tep_Online_Full-time_2021_1#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
-    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
     "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
