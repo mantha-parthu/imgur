@@ -4,6 +4,7 @@
   "description": "At the end of this milestone you will learn",
   "main": "index.js",
   "scripts": {
+    "start": "npm install && node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
