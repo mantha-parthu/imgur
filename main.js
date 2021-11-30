@@ -11,14 +11,14 @@ const ErrorResponse = require('./utils/errorResponse')
 
 
 var app = express();
-var PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());  // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 app.use(methodOverride());
-app.listen(PORT,function(){
-    console.log("Server listening to port::"+PORT);
-});
+
+app.listen(process.env.PORT || 8000,function(){
+    console.log("Server started...");
+})
 
 const connetionUrl = "mongodb+srv://parthuimgur:siddu@imgurapp.x7agv.mongodb.net/imgur";
 
