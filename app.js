@@ -1,4 +1,4 @@
-await import("dotenv").then(dotenv => dotenv.config());
+/*await import("dotenv").then(dotenv => dotenv.config());
 const { PORT, HOST } = process.env;
 import http from 'http';
 const server = http.createServer((request, response) => {
@@ -10,4 +10,4 @@ const server = http.createServer((request, response) => {
 });
 server.listen(PORT, HOST, () => {
   console.log(`server started running at ${HOST}:${PORT}`);
-});
+});*/

@@ -11,7 +11,7 @@ const ErrorResponse = require('./utils/errorResponse')
 
 
 var app = express();
-var PORT = 8000;
+var PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());  // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
